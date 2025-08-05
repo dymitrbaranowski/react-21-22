@@ -33,13 +33,12 @@ export default function App() {
           <Route path="/authors">
             <AuthorsView />
           </Route>
+          <Route path="/books/:slug">
+            <BookDetailsView />
+          </Route>
 
           <Route path="/books" exact>
             <BooksView />
-          </Route>
-
-          <Route path="/books/:slug">
-            <BookDetailsView />
           </Route>
 
           <Route>
